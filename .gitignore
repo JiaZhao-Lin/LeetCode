@@ -1,0 +1,23 @@
+##############################################
+## User files
+*.DS_Store
+*.icloud
+*.vscode
+__pycache__
+.cache
+.ipynb_checkpoints
+
+*.root
+*.txt
+*.dat
+*.pdf
+*.png
+*.jpg
+*.gif
+*.log
+*.yaml
+*.tar
+*.gz
+*.csv
+Test.*
+test.*
