@@ -5,7 +5,7 @@
 1. use carry to keep track of the number. keep track of the head with dummyHead, return dummyHead.next
 	```
 	digit1 = l1.val if l1 is not None else 0
-    digit2 = l2.val if l2 is not None else 0
+	digit2 = l2.val if l2 is not None else 0
 
 	carry += digit1 + digit2
 	digit = carry % 10

@@ -3,8 +3,8 @@
 1. Recursion: handling None case first, then recursively do work
 	```
 	if root == None:
-            return 0
-    return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+			return 0
+	return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 	```
 1. Recursion: 
 	- is: test object identity

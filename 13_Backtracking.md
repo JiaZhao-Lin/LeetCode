@@ -24,13 +24,13 @@
 	ans = []
 	def backtrack(comb, start, count):
 		if not count:
-		    ans.append(comb)
-		    return
+			ans.append(comb)
+			return
 		
 		for i in range(start, n+1):
-		    out = list(comb)
-		    out.append(i)
-		    backtrack(out, i+1, count-1)
+			out = list(comb)
+			out.append(i)
+			backtrack(out, i+1, count-1)
 			
 		return
 	
