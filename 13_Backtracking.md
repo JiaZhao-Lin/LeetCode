@@ -36,3 +36,17 @@
 	
 	backtrack([], 1, k)
 	```
+
+1. Return all the possible permutations
+	```
+	def backdrop(permu, nums):
+		if len(nums) == 0:
+			ans.append(permu)
+			return
+
+		for i in range(len(nums)):
+			permu_ = list(permu)
+			permu_.append(nums[i])
+			nums_next = nums[:i] + nums[i+1:]
+			backdrop(permu_, nums_next)
+	```

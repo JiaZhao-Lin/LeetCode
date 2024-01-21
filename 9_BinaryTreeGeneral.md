@@ -47,3 +47,18 @@
 	root.left = self.buildTree(inorder[:index], postorder[:index])
 	root.right = self.buildTree(inorder[index+1:], postorder[index:-1])
 	```
+
+1. BFS, for each node, we pack it and a number labeling the current level to tuple
+	- check if the current node is in the same level as the previous node
+
+1. recursively substract the node value from the target value 
+	- stop when both children are None, check if current target value is node value
+
+1. 
+	```
+	if(root == None):
+		return 0
+	return( self.countNodes(root.left) + self.countNodes(root.right) + 1 )
+	```
+
+1. DFS binary tree and append the node into a list. The node in the list is sorted since it's from a binary tree. Relink the node in the list

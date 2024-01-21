@@ -26,3 +26,17 @@ while queue:
 
 		return 
 	```
+
+1.  keep a map for each level for running avarage
+    ```
+	dicts = defaultdict(list)
+	def dfs(node, level):
+		if node == None:
+			return
+
+		dicts[level].append(node.val)
+		
+		dfs(node.left, level+1)
+		dfs(node.right, level+1)
+	```
+		
