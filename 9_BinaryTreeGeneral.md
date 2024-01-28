@@ -62,3 +62,5 @@
 	```
 
 1. DFS binary tree and append the node into a list. The node in the list is sorted since it's from a binary tree. Relink the node in the list
+
+1. Define a DFS function that take in the sum up until the node, return if both leaf are None, return 0 if current node is None.

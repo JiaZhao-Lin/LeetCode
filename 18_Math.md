@@ -22,3 +22,8 @@
 			left = mid + 1
 	return right
 	```
+
+1. all trailing 0 is from factors 5 * 2. just count how many 5 factors in all number from 1 to n.
+	```
+	return 0 if n == 0 else n / 5 + self.trailingZeroes(n / 5)
+	```

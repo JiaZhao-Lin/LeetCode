@@ -24,3 +24,5 @@ return left
 			
 	return left
 	```
+
+1. apply binary search by determining which half of our array is sorted and whether the target lies within it.
