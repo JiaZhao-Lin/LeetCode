@@ -26,3 +26,28 @@
 		temp.next = prev.next
 		prev.next = temp
 	```
+
+1. creating a mapping using the val of the node as the key and the node as the value. remove the appropriate node. 
+
+1. zigzag pattern
+	- create a mapping of row number and characters in that row
+	```
+	#	P   A   H   N
+	#	A P L S I I G
+	#	Y   I   R
+
+	#HINT:
+	#    P  A  Y  P  A  L  I  S  H  I  R  I  N  G
+	#    -----------------------------------------
+	#Row 1  2  3  2  1  2  3  2  1  2  3  2  1  2
+
+	hashmap = defaultdict(str)
+	irow = 1
+	increment = 1
+
+	for i in range(len(s)):
+		hashmap[irow] += s[i]
+		irow += increment
+		if irow == numRows or irow == 1:
+			increment *= -1
+	```

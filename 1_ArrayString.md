@@ -53,3 +53,5 @@
 			num-=n
 	return r
 	```
+
+1. use strip() to remove leading and trailing spaces. Use split() to break the string into list(). Use join() to connect.

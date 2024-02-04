@@ -50,3 +50,19 @@
 			nums_next = nums[:i] + nums[i+1:]
 			backdrop(permu_, nums_next)
 	```
+
+1. keep current combination, current combination sum, current index (to avoid repeats)
+	```
+	def dfs( l, curr_sum, idx ):
+	if curr_sum > target:
+		return
+	if curr_sum == target:
+		ans.append(l)
+		return
+
+	for i in range(idx, n):
+
+		dfs(l + [candidates[i]], curr_sum + candidates[i], i)
+
+	return
+	```
