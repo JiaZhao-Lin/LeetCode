@@ -51,3 +51,5 @@
 		if irow == numRows or irow == 1:
 			increment *= -1
 	```
+
+1. Use defaultdict(list) to count then number of val in the linked list
