@@ -26,3 +26,13 @@ return left
 	```
 
 1. apply binary search by determining which half of our array is sorted and whether the target lies within it.
+
+1. 
+	- if target exists, returns the leftmost idx of target.
+    - If target doesn't exist, returns the leftmost idx of some num > target.
+	- If target doesn't exist and target > all nums, returns len(nums)
+	search the (target+1): it always give 1 index higher if the target exist
+	```
+	low = search(target)
+    high = search(target+1)-1
+	```

@@ -27,3 +27,5 @@
 	```
 	return 0 if n == 0 else n / 5 + self.trailingZeroes(n / 5)
 	```
+
+1. Divide and Conquer: `x ** 10 = x**5 * x**5 * x**0`
