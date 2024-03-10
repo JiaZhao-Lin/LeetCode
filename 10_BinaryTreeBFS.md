@@ -39,4 +39,17 @@ while queue:
 		dfs(node.left, level+1)
 		dfs(node.right, level+1)
 	```
-		
+
+1. maintain a defaultdict to map level to a list containing the value. use BFS to traverse through the tree
+	```
+	d = defaultdict(list)
+	queue = deque( [ (root, 0) ] )
+
+	while queue:
+		node, level = queue.popleft()
+		d[level].append( node.val )
+		if node.left != None:
+			queue.append((node.left, level+1))
+		if node.right != None:
+			queue.append((node.right, level+1))
+	```

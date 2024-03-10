@@ -7,3 +7,7 @@
 	- pop row
 	- rotate: ( list( zip( *matrix ) ) )[::-1]
 	- repeat
+
+1. Two passes through the matrix
+	- Remember the row and column numbers of all 0 in a single list
+	- Set entire row to 0 and then loop over the columns
