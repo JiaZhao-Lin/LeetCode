@@ -66,3 +66,19 @@
 
 	return
 	```
+
+1. Given a str, we can either add '(' or ')' to it
+	- It's always valid to add '(' it's fewer than n
+	- It's only valid to add ')' when there are more '(' in the string
+	```
+	def dfs(l, r, s):
+		if len(s) == n * 2:
+			ans.append(s)
+			return
+
+		if l < n:
+			dfs(l + 1, r, s+'(')
+
+		if r < l:
+			dfs(l, r + 1, s+')')
+	```

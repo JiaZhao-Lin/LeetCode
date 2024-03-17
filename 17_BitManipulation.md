@@ -14,4 +14,6 @@
 		xor ^= num
 	return xor
 	```
+
+1. `( ( 3*sum((set(nums))) ) - sum(nums) ) // 2`
         

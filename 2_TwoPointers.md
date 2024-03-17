@@ -5,3 +5,7 @@
 1. while l < r: increase or decrease them
 
 1. Start from the two ends, decrease the l and r base on height. 
+
+1. Split nums into three lists: negative numbers, positive numbers, and zeros
+
+1. Sort the list. Loop over the list, search for sum to 0 from two ends by shrinking the boundaries.
